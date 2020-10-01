@@ -9,7 +9,7 @@ def index():
     reader=csv.reader(file)
     students=list(reader)
     return render_template("Chat.html",students=students)
-
+#hello
 @app.route("/register",methods=["POST","GET"])
 def register():
     if request.method == "POST":
